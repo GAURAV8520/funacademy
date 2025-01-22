@@ -23,7 +23,9 @@ function Sidebar() {
 
   return (
     <section className="sticky left-0 top-0 flex h-screen w-fit flex-col bg-gray-50 p-6 text-black border border-gray-300  max-sm:hidden lg:w-[264px]">
-      <div className="flex flex-1 flex-col gap-6">
+      
+      <div className="flex flex-1 flex-col gap-4">
+        
         {sidebarLinks.slice(0, showMore ? sidebarLinks.length : 5).map((link) => {
           const isActive =
             pathname === link.route || pathname.startsWith(`${link.route}/`);
